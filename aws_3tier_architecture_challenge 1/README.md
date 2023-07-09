@@ -1,6 +1,6 @@
 # AWS_3tier_architecture_terraform
 
-Infrastructure Automation | Deploying a 3-Tier Architecture in AWS Using Terraform
+Deploying a 3-Tier Architecture in AWS Using Terraform
 
 The three-tier architecture is the most popular implementation of a multi-tier architecture and consists of a single presentation tier, logic tier, and data tier.
 
@@ -15,9 +15,9 @@ Data Tier : MY SQL , mongo DB etc
 
 -> In 2 public subnet our backend application servers will be hosted in 2 AZ and DB servers will be hosted in private subnet 
 
---> we have to specify route table , security groups , elastic IP's , ingternet Gateway and NAT gateway inside the VPC 
+-> we have to specify route table , security groups , elastic IP's , ingternet Gateway and NAT gateway inside the VPC 
 
---> NAT gateway will be in public subnet anf only outbound traffic route is enable for Private instance to talk to internet and for public subnet ports 22 , 80 is open for inbound connectivity 
+-> NAT gateway will be in public subnet anf only outbound traffic route is enable for Private instance to talk to internet and for public subnet ports 22 , 80 is open for inbound connectivity 
 
 -> we will also create a ALB for ELB inorder to distrubute the traffic from end users to our target groups i.e. backend web servers created in the public subnet. 
 
